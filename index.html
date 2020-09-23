@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Kanta || Welcome</title>
+</head>
+
+<body>
+    <main class="container-fluid p-0 bg-light">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-sm bg-black navbar-dark fixed-top">
+            <div class="container p-0 h-100">
+                <ul class="navbar-nav">
+                    <a class="navbar-brand" href="#">CheapZone</a>
+                    <li class="nav-item">
+                        <a onclick="location.href='config/process/change_cat_session.php?cat=Men'" class="nav-link pointer">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="location.href='config/process/change_cat_session.php?cat=Women'" class="nav-link pointer">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="location.href='config/process/change_cat_session.php?cat=Kids'" class="nav-link pointer">Kids</a>
+                    </li>
+                </ul>
+
+                <div class="ml-auto d-flex flex-wrap h-100">
+
+                    <div class="h-100 d-flex flex-wrap align-content-center">
+
+                        <form action="search/">
+                            <input type="text" style="display: none;" class="m-0 p-0 pl-1" placeholder="Search" id="sb">
+                        </form>
+
+                        <!--Search 1-->
+                        <button onclick="showSearch()" class="btn p-0 btn_lg ml-2">
+                            <img src="assets/icons/search.png" alt="SEARCH" class="img-fluid">
+                        </button>
+                        <script>
+                            function showSearch() {
+                                document.getElementById('sb').style.display = "";
+                            }
+                        </script>
+
+                        <!--Cart 1-->
+                        <button onclick="location.href='cart/'" class="btn p-0 btn_lg ml-5">
+                            <img src="assets/icons/cart.png" alt="CART" class="img-fluid">
+                        </button>
+
+                        <!--Profile 1-->
+                        <button onclick="location.href='profile/'" class="btn p-0 btn_lg ml-2">
+                            <img src="assets/icons/user_profile.png" alt="PROFILE" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Content-->
+        <div class="container-fluid bg-black p-0 h-100" style="padding-top:80px">
+
+            <div class="w-100 h-90">
+                <div class="container text-light p-0 h-100 d-flex flex-wrap align-content-center">
+                    <div class="w-100 h-25">
+                        <h1>WELCOME TO CHEAPZONE</h1>
+                        <p>WHERE QUALITY IS AFFORDABLE</p>
+                    </div>
+                    <button onclick="location.href='#Deals'" class="btn btn-outline-light">
+                        Explore
+                    </button>
+                </div>
+            </div>
+            <div class="w-100 h-10">
+                <div class="container d-flex p-0 h-100">
+
+                    <div class="w-50 h-100 d-flex flex-wrap align-content-end pb-1 float-left">
+                        <span class="mr-5 pointer m_f">Help</span>
+                        <span class="mr-5 pointer m_f">Order Tracking</span>
+                        <span class="mr-2 pointer m_f">Order Retuen</span>
+                    </div>
+
+                    <div class="w-50 h-100 d-flex flex-wrap align-content-end pb-1 justify-content-end">
+                        <div style="width:40px;" class="mr-1 h-25 bg-light"></div>
+                        <div style="width:40px;" class="mr-1 h-50 bg-light"></div>
+                        <div style="width:40px;" class="mr-1 h-75 bg-light"></div>
+                        <div style="width:40px;" class="h-100 bg-light"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container-fluid">
+        <main class="container" id="Deals" style="padding-top:80px">
+            <div class="h-100 w-100">
+                <!--Hot Deals Header-->
+                <div class="h-10 w-100 d-flex flex-wrap align-content-center justify-content-center">
+                    <div class="container w-50">
+                        <ul class="nav nav-pills row">
+                            <li class="nav-item col-sm-4 text-center">
+                                <a style="font-size: 12px;" class="nav-link active btn-outline-dark" data-toggle="pill" href="#hot_deals">HOT
+                                    DEALS</a>
+                            </li>
+                            <li class="nav-item col-sm-4 text-center">
+                                <a style="font-size: 12px;" class="nav-link btn-outline-dark" data-toggle="pill" href="#most_popular">MOST POPULAR</a>
+                            </li>
+                            <li class="nav-item col-sm-4 text-center">
+                                <a style="font-size: 12px;" class="nav-link btn-outline-dark" data-toggle="pill" href="#new_arrival">NEW ARRIVAL</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Deals Body-->
+                <div class="h-90 w-100">
+                    <!-- Nav pills -->
+
+                    <!-- Tab panes -->
+                    <div class="tab-content w-100 h-100">
+                        <div class="tab-pane container w-75 h-100 active" id="hot_deals">
+
+                            <div class="row h-100 o_auto">
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane container w-75 h-100 fade" id="most_popular">
+                            <div class="row h-100 o_auto">
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container w-75 h-100 fade" id="new_arrival">
+                            <div class="row h-100 o_auto">
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-3 p-3">
+                                    <!--Item Card-->
+                                    <div class="w-100 o_hide item_cont">
+                                        <div style="padding: 2px;" class="item_card pointer card o_hide w-100">
+                                            <div data-toggle="modal" data-target="#myModal" class="item_image o_hide w-100">
+                                                <img src="assets/products/test_item.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item_details">
+                                                <div class="w-100 text-center item_name">
+                                                    <p class="m-0 bold text-muted t_eclips">Item Name Item Name Item
+                                                        Name</p>
+                                                </div>
+                                                <h4 class="text-center">$200.00</h4>
+                                            </div>
+                                            <div class="item_btns mb-0 pb-o clearfix">
+                                                <button onclick="location.href='config/process/add_to_cart.php'"
+                                                    class="btn float-left rounded-0 m-0 w-50 p-0 btn-warning">Cart</button>
+                                                <button onclick="location.href='config/process/save_item.php'"
+                                                    class="btn float-right rounded-0 m-0 w-50 p-0 btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                            <strong class="modal-title">Item Name</strong>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                    
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!--Item Images-->
+                                                <div class="w-100 clearfix" style="min-height: 30vh;">
+                                                    <div class="w-50 h-100 float-left">
+                                                        <img id="itemxImageDisplay" src="assets/products/test_item.jpg" alt="" class="img-fluid img-thumbnail">
+                                                    </div>
+                                                    <!--Other Images-->
+                                                    <div class="w-50 pl-2 float-right h-100 justify-content-between d-flex flex-wrap">
+                                                        <div class="w-40  m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item.jpg'" src="assets/products/test_item.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item2.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item2.jpg'" src="assets/products/test_item3.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                        <div class="w-40 m-1 o_hide">
+                                                            <img  onclick="document.getElementById('itemxImageDisplay').src='assets/products/test_item4.jpg'" src="assets/products/test_item4.jpg" alt="" class="img-fluid pointer img-thumbnail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Item Details-->
+                                                <div class="w-100 p-2">
+                                                    <strong>Details</strong>
+                                                    <p>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsum adipisci perferendis consectetur commodi nemo! Libero ipsa molestiae nihil, magnam exercitationem pariatur omnis! Quis soluta nemo fuga, sint tenetur iusto.
+                                                    </p>
+                                                </div>
+
+                                                <!--Buttons-->
+                                                <div class="w-100 clearfix">
+                                                    <div class="w-50 text-center float-left">
+                                                        <button onclick="location.href='config/process/add_to_cart.php'" class="text-center btn-warning btn w-50">Add To Cart</button>
+                                                    </div>
+                                                    <div class="w-50 text-center float-right">
+                                                        <button onclick="location.href='config/process/save_item.php'" class="text-center btn-info btn w-50">Save Item</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+
+<script src="js/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="js/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
